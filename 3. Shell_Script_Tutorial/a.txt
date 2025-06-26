@@ -1,0 +1,3 @@
+this a.txt file
+which made for testing 
+for loop with file add
