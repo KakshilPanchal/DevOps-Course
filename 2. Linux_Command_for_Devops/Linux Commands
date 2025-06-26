@@ -1,0 +1,198 @@
+                                                                                                                                   LINUX AND COMMANDS
+                                                                                                                                                                                                                                                                         
+basically it is server where Linux os is install and this Linux os provided by ubuntu distributor
+redhat, centos, fedora distributor providing Linux OS
+like in window you can move from C directory to D directory gui through cursoer and if you want to go to previous directory you can click on back arrow through cursor to go back to previous directory but in Linux it not possible because there is no GUI most of times
+
+/-> root directory (home directory)
+-> when you create any user linux will create home directory with his name in /home/ directory like for kakshil user /home/kakshil
+
+1) ls -> It Will Display The List Of All File And Folder In  Directory 
+2) Pwd -> It Will Display Your Current Working Directory (Folder)   (Means , Like You Working In /Home/Ubuntu Working Directory)
+3) Cd - You Can Change Your Current Working Directory To Another Directory or come to your user home directory
+4)Cd  .. -> It Will Move Directory One Level Up
+5)Cd../.. -> It Move Directory Two Level Up
+6)Ls -ltr  or ls -l -> It Will Display Detail Information Of File And Folder Like Date , Time, Size , And The User Owner Of File And Folder 
+7)Touch -> Create Empty File
+8)Vi - It Used To Create or edit File With Content In It 
+              -> (Here Linux Will Provide Mode Where If You Want To Read A File Or Want To Write File Or To Save File And Based On This Mode You Can Create File)
+              -> Insert Mode - To Write Content In File
+              Press Escape And
+              -> :Wq To Save File With Content 
+9) Cat -> To Display The Content Of File
+10) Rm - To Remove File
+11) Rm -R -> To Remove Directory 
+12)Mkdir - To Make Directory
+13)Free -> To Monitor Your System Performance 
+     free -th  -> display total memory of system
+14)Free  -G -> To Display Memory Information Of System   
+15)Nproc ->  Display No Of Cpu In System
+16)df -h -> Display file system and Disk Usage Information in Human Readable Format
+17)Top - It Display Detail Information About System Performance like memory usage, CPU utlization.
+18) Whoami - display current login user in terminal
+19) date - display date and time full format 
+20) date +%D - display only date 
+21) date +%T - display only time
+22) date %H:%M - display time in hours and minutes 
+23) ls -lt - display latest modify file and folder in reverese order
+24) ls -ld - display detail information about folder (it display last modify time of file,date and user owner and permission also)
+25) ls -lh - display the size of file and folder in human readable format 
+26) less - to display file content page by page and use mostly in long file
+          -> use / slash to search matching record or data 
+          -> press n(next)  to search next  matching record in file 
+          ->  press p to got to top of file 
+          -> shift + g - go to bottom of file
+27) more -  dispay file page by page in terminal
+28) nano - to create or edit file with content in it 
+29) rm -rf  - to remove directory and sub directory and it content forecfully 
+30) [kakshil@localhost ~]$ #Absolute Path Example1
+      [kakshil@localhost ~]$ cd /home/kakshil/myfolder/newfolder1/newfolder2/
+      [kakshil@localhost newfolder2]$ 
+      
+      [kakshil@localhost myfolder]$ #Relative path 
+      [kakshil@localhost myfolder]$ cd newfolder1/newfolder2/
+      
+31) cp <filename>  <destination path> - to copy file from one location to another 
+32) cp ../filename  . -> it will copy file from one directory level up and copy in current location through dot(.)
+33) mv - cut or move and Rename file from one location to another 
+34) head - to see default top 10 line of files 
+35) head -n 5 -> display top 5 lines of file
+36) tail - to see default  bottome 10 line of file
+37) tail -n 5 -> display bottom 5 line of files
+38) sort - it will do sorting in file means arrange the alaphabet or number in order
+39) sort -r <filename> - for reverse sorting of file 
+40) sort <filename> | uniq - display unique content in file [means you will not see repeated content]  
+       | -> it used to combine two command or it redirect output of one command and take input from other command
+41) split -l 3 <filename> - to split file line into 3 different files
+      suppose you have 9 line in a.txt file then you want to split 3-3 line in different file then used split command
+42) grep "word" <filename>  - to search matching  content in files
+43) egrep "word1 | word2" <filename>  - to search multiple matching content in files
+44) ls <pattern>* - it will display file which start with defined pattern
+45) ls *<pattern> - it will displau file which end with defined pattern
+46) touch file{1..5} - it will create 5 file at time
+47) shuf <filename> - to shuffle the line of  file
+48) wc -l <filename> - to find number of line in files (how much data in file)
+49) wc -c <filename> - to find number of word in files 
+50) cmp <filename1> <filename2>  - it compare and check two file are same or not 
+51) diff -u <filename1> <filename2> - it compare and show difference between two files 
+52) find <path> -name <filename>  - to find or search file (it will find your file by going in each path)
+      find ./ -name <filename> here ./ -> means used to search file in current path 
+53) locate <filename> - it will find or search file from its database but you need to update database so that all latest file get update in database(fire command - updatedb but you need fire this command through sudo or root access)
+       -> main difference between find and locate command is find command search file in every location and find real time files(means it also find or search file which is newly create) so it little      
+            slow and while locate uses pre-built database to find file quickly and here need to update database so that all file are update in database      
+54) which  - to find exectuable file with given command
+55) bc - to use calcualtor 
+56) cal - to check calendar 
+57) uptime - how long your machine is running it display time ( & how many user is login in this machine)
+      [kakshil@localhost ~]$ uptime
+      14:11:20 up  3:51,  2 users,  load average: 0.39, 0.39, 0.25  --> [3 hour and 51 minute long your machine running]
+58) script - to record actvity on terminal and it will save in file called  typescriptfile  [Once record is done press Ctrl + D]
+59) alias l="ls  -ltr"  - to make shortcut of any long command 
+      [kakshil@localhost ~]$ alias l="ls -ltr"
+      but if you restart machine alias configuration will removed its temparory , so if you want to configure alias permanently then need to make changes in bashrc file.
+      alias -p  - display alias 
+60) gzip -k <filename>  - it create compress file of orginal file. (-k = means keep orginal file and make same file with compression)\
+61) gzip -d <filename>  - to decompress file
+62) tar -czf myfile.tar.gz  <existing folder name>  -  to compress folder  [ it keep orginal folder and make same folder with compression]
+      czf -> c (compress)
+      z( gz format of file needed )
+      f(give file name  of compression folder means it convert that compression folder into file)
+63) tar  -xzf  myfiles.tar.gz  - decompress folder 
+64) zip myfile.zip <filename1> <filename2>  - to compress mutliple files in one zip file
+       myfile.zip -> it is name of zip file
+65) unzip <zipFilename>   - to decompress the zipped file and file will be extracted
+66) unzip -l <zipfilename>   - list all file in Zip files
+67) zip -r  <zipfilename> <directoryname>  - it will compress folder and sub folder and file into zip files
+68) wget URL_of_file -> to dowlond file from internet
+69) curl http://numbersapi.com/random - to call API or to fetch data from server (using API we can reterive website information)
+       curl command used to make request to website or server 
+       like suppose you open browser and type website address and borwser will send request to web server server where website is hosted and server will send response and  show the website or web
+       pages on browser. so here curl will do  this without browser where he directly ask to web server for getting website or web pages. so to check server is running, to  dolwond file without use 
+       of browser  
+70) yum/dnf  - to install application  (normal user need to used sudo command becuase if some user get permission then it can dowlond anything on server it make security problem)
+     sudo user permission is depend on root (Admin user) 
+71) rpm -qa | grep <application name>  -  to check application is install or not
+72) yum list installed -> to display list of all installed packages 
+73) yum list available -> display available version of package for dowlond 
+74) systemctl start <servicename> -> to start service
+75) systemctl stop <servciename> -> to stop service
+76) systemctl status <servicename> -> to check status of service it running or not
+77) systemctl list-units --type=service --all -> display list of all services
+78) printenv - list all existing enivorment variable ( allow applications to customize their behavior without needing or modify their source code and storing information that 
+       can be accessed and used by different programs and scripts,)
+79)   Temparoary add enivornment variable
+        export JAVA_HOME="/usr/lib/jvm/ava-17-openjdk-17.0.6.0.10-3.el9_1.x86_64" - to add new environment but to make changes need to fire below command 
+        export PATH=$JAVA_HOME/bin:$PATH 
+80)   Add enivronment varibale permanently
+        - go to vi .bashrc
+        - last line TESTVAR="ABCD"
+        - export TESTVAR
+        - source .bashrc
+        - printenv
+        this variable is permanently save and it can seen only by specific user 
+        add env variable in ./bashrc file
+        source ~/.bash_profile
+81) awk -F  , '{print $1,$2}'  <filename.csv>  - print specific coloumn from CSV file [$2 is columm number]
+82) cut -c1-2 <filename> - display starting two character in file [1-2  display two character of line]
+83) sed -n 5 '5p' <filename> - display specific line from file [here it display fifth line of file]
+84) sed -n 's/from/to/g' <filename> - to replace specific word in file  [ s mean substitute , g -> for globally changes, "from" word replace into 'to']
+   -> [kakshil@localhost ~]$ cat kakshil.txt 
+    this is my file
+    my name kakshil panchal
+    i am working in tech mahindra as 
+    cloud solution architect
+   -> [kakshil@localhost ~]$ sed  's/cloud/aws/g' kakshil.txt 
+        this is my file
+        my name kakshil panchal
+        i am working in tech mahindra as 
+        aws solution architect 
+85) ssh - to login to remote server or machine  
+       ssh <username>@<ipAddress> 
+86) scp <filename>  <username>@hostname:/tmp/ - to copy file to remote server
+87) chmod - to change permission of file and folder 
+       chmod a+rwx <filename>   [a is for all user]
+       chmod ugo+rwx <filename>  
+       chmod u+rw <filename>
+       chmod u-rw <filename> - to remove permission 
+88) chown - to change ownership of file and folder 
+       chown <user> <filename> - to change ownership of file or folder
+       chown <user> <groupname> <filename>  - to change user owner and group owner of file at time
+       chown  :<groupname> <filename>  - to change only group owner of file & folder
+89) chown -R and chmod -R  -> change permission recusrively means it change permission of folder, subfolder and file & same with Chown -R ownership (onwership only can change by root 
+        user  or required root priviligies) 
+90) chgrp <groupname> <filename>  - to change the group owner of file and folder
+91) du - to check disk size utlization of specific folder or location
+       du -h <folder or filename>
+92) lscpu = to check information about cpu, core, thread information.
+93) arch - to check type of architecture of linux
+94) lsblk - display the disk partition and storage  device information
+95) uname -a  - display information about OS of linux
+       cat  /etc/os-release - display detail information about OS 
+96) ps -ef | grep <processname>  - to check process is running or not 
+      ps -e  - display all running process
+97) pgrep <processname>  - display only process id of process
+98) job - display running and stop process with ID 
+      sha1sum /dev/zero & - to start the process
+99) kill -9 <processID>  - to stop process ID
+       ctrl +z - also stop process
+99) pkill <processName>  - to stop process by name
+100) jobs - to display all active jobs 	
+101) bg  - to resume job in background
+102) fg   - resume job in foreground 
+103) nohup ./<scriptname>  > /dev/null &  -> to run script in background
+104) ping - to check website or server is reachable on internet or not 
+105) telnet  IP port - to check IP port is accesible and Open or Not
+106) netstat -putan | grep 80 - to check port is open or not on our web server )
+107) traceroute - it trace route of IP packet from source to destination
+108) useradd - to add user 
+109) id - used to display user,group information and its ID and permission
+110) groupadd <groupname>  - to add group 
+111) id <username>  - it used to check user id and group id of user 
+112) userdel <username> - to delete user  [it only delete user not is Home directory ]
+        userdel -r <username> - to delete user with home directory 
+113) groupdel <groupname>  - to delete group
+114) usermod - to modify the user account
+        usermod -G <groupname> <username>  - to add group to user 
+115) at -  display schedule process
+116) crontab - schedule the script to run on particualr time 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
