@@ -1,6 +1,0 @@
-equal -eq/==
-greaterthanequalto  -ge
-lessthanequalto -le
-not equal -ne/!=
-greater than -gt 
-less than -lt
