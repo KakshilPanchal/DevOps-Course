@@ -1,10 +1,13 @@
-                                                                                                                               Networking For  DevOps
+                                                            NETWORKING FOR DEVOPS
+                                                       ------------------------------
+
                                                                                                                                                          
 Networking basics are essential for DevOps engineers because they provide a foundational understanding of how different components of a system communicate. 
 This knowledge is crucial for troubleshooting issues, securing the infrastructure, implementing automation, and optimizing performance.
 
 
-                                                                                                                                 TOPIC  To Be Covered 
+                                                             TOPIC TO BE COVERED
+                                                           - - - - - - - - - - - - -
                                                                                                                              
 1 - OSI Model / TCP IP Model
 2 - Protocols : TCP/UDP/IP
@@ -31,25 +34,28 @@ There are different types of network. But the main two are LAN and WAN 👉
 3- WAN (Wide Area Network) - extends LAN over a large geographic area. e.g:- optical fiber cable
 4-SONET (Synchronous Optical Network) - used in submarine.
 
-                                                                                                                                  1.OSI Model
+                                                                    1.OSI Model
                                                                                                                                   
 The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven abstraction layers. 
 Each layer has a specific role in managing aspects like hardware, addressing, routing, and application-level interactions. 
 The OSI model is used to understand and design network architectures, and it helps in troubleshooting network communication issues.  
 
-https://youtu.be/vv4y_uOneC0?si=OXB1tsn39VnahUP1
+Resources - https://youtu.be/vv4y_uOneC0?si=OXB1tsn39VnahUP1
 
  
-                                                                                                                              TCP/IP Model
+                                                                    TCP/IP Model
+
 Transmission Control Protocol (TCP) ensures that data arrives in the correct order and without errors, 
-while Internet Protocol (IP) is responsible for routing data packets to their destinations. Together, they form the backbone of Internet communication.                                                                                                                             
-https://youtu.be/2QGgEk20RXM?si=-SYTSn_Y5pcqnJfH
+while Internet Protocol (IP) is responsible for routing data packets to their destinations. Together, they form the backbone of Internet communication.
+
+Resources : https://youtu.be/2QGgEk20RXM?si=-SYTSn_Y5pcqnJfH
                                                                                                                                
 
 
      
                                                                                                                          
-                                                                                                                            2. Protocols :TCP/UDP/IP
+                                                             2. Protocols :TCP/UDP/IP
+
                                                                                                                    
 A protocol is a set of rules that defines how data is transmitted and received between devices in a network. 
 It ensures standardized communication, allowing different systems to understand and interact with each other. 
@@ -79,7 +85,7 @@ In short, TCP ensures reliable and ordered communication with a connection-orien
 
 
 
-                                                                                                                                                  3. Ports
+                                                                    3. Ports
                                                                                                                                                   
 Ports are essential for directing network traffic to specific applications or services on devices.
 
@@ -100,13 +106,14 @@ Port No.                     Protocol
 161                             SNMP (simpple network management Protocol
 
 
-                                                                                                                                         4.Routing
+                                                                  4.Routing
                                                                                                                                          
 Routing is the process of directing data packets from a source to a destination across a network. 
 Routers use routing tables and protocols to decide the path for data transmission, ensuring efficient and reliable communication between devices.
 
 
-                                                                                                                                        5. DNS
+                                                                   5. DNS
+
                                                                                                                                         
 DNS, or Domain Name System, translates easy-to-remember domain names to computer-friendly IP addresses, 
 helps find mail servers, balances web traffic among servers, redirects requests, performs reverse lookups, and speeds up responses through caching. 
@@ -124,14 +131,18 @@ DNS Record Types:
 Learning Resource: What is DNS? — Introduction to DNS — AWS https://aws.amazon.com/route53/what-is-dns/
 https://youtu.be/mpQZVYPuDGU?si=aCbVg9_Fdx5VO5IU
 
-                                                                                                                                    6. VPN
+                                                                  6. VPN
+
 A VPN, or Virtual Private Network, is like a secure tunnel for your internet connection. 
 It encrypts your data and routes it through a server, making your online activities more private and secure
 
 VPNs allow professionals to securely connect to remote servers, access cloud resources, and perform maintenance tasks without compromising data security. 
 It ensures a private and encrypted connection, crucial when dealing with sensitive configurations, deployments, or infrastructure management tasks.
 
-                                                                                                                                  7. Networking tools:
+                                                                                                                                  
+
+                                                           7. Networking tools:
+
 
 Important networking tools for DevOps Engineer:
 
@@ -175,7 +186,7 @@ x. Iperf :
 Purpose: To measure the TCP and UDP performance of a network.
 Usage Example: iperf -s (server) and iperf -c (client).
 
-                                                                                                                               8. Subnetting
+                                                              8. Subnetting
                                                          
 IPv4
 This is a 32 bit IP address, means it contains a combo of 32 (1 and 0's). 
@@ -191,9 +202,9 @@ Resources :- https://youtu.be/OqsXzkXfwRw?si=ryXhnOkNrVwuuU6y
 
 
 
-                                                                                                                      9. Switching techniques 
+                                                         9. Switching techniques 
                                                                                                                        
-https://youtu.be/-HlJ4psu5aU?si=WPI1lbBpn_x9CGwb
+Reference :- https://youtu.be/-HlJ4psu5aU?si=WPI1lbBpn_x9CGwb
 
 
 
