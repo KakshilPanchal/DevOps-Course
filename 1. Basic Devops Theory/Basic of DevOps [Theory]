@@ -1,0 +1,266 @@
+                                                                                                                                               DEVOPS COURSE.
+                                                                                                                                                 
+Day-1
+                                                                                                                                        INTRODUCTION TO DEVOPS 
+ 
+what is devops?
+-> devops it is culture within organisation which increase the ability of improving and delivering best quality software to user quickly.
+- example - if suppose the application having some security issue or bug in application then developer will try to resolve the bug or security issue and delivered the upgrade version of application user so that user can upgrade version of application and improve the quality of application and use application but here delivering the upgrade version of application user take more time so to prevent this we Use DevOps within organisation where  by ensuring the  proper automation(where due to this delivered application quickly to user)and   maintain the quality of software or code , and ensuring continuous  monitoring of  application, and    continuous testing of application so that you can delivered upgrade version of application to user quickly so that user can upgrade an application and improve the quality of software and use application effectively. 
+-> not only application but you can also  improver delivery of script.
+
+example-
+-> like you hired as devops engineer in company and company expect from you that you need to delivered the application within2 weeks then what company expect as from devops engineer is that   he can reduce the 2 week to 1 week for delivering application by ensuring automation, improve quality of software, by continuous testing and monitoring..
+
+ why devops?
+-> suppose there is developer which writing code for developing application and the application can be any like android application, static website or web application etc but the main goal of developer is to delivered application to user. this is main goal 
+
+-> so developer write the code for developing application and delivered the application to user and user will use the application  but what happen between it before the devops is no there?
+Answer :- so before devops is not there then suppose developer write the code for developing application and once developer write the code so he need to check the code for the application  because there will no single developer but there will be multiple developer so they need to share this code to somewhere so they used central location where from this system admin or build or release engineer create server and deploy code or application on server and tester will test application or code which deploy on server and then after it will promote application to next level(pre-production environment) and again the application once  test on pre-production environment then build   and release engineer will deploy application in production environment to delivered application to customer
+- so to delivered application from developer machine to customer there will need system admin(create server to testing application and then somebody need to install application on server because developer create code or application on his local machine and he checked his code on central code repositories where all code of developer are stored here and all developer can access and test code and push that code)  and Build  and release engineer (where it deploy application on server and there will need application server application on server to deploy application   then server admin (it will create application server for deploying application)
+so this all 3 role are working together for delivering application to customer or onto production environment. so this is all manual process which take more time   and slow
+-> So to automate process Devops is introduced to make development process faster and delivered  the application to customer in less time by doing proper automation,   maintaining quality of software and by monitoring application during failure or bug in application and finally you need to continuously test your application and by involving  this it will improve the efficiency of your organization and this is role of devops engineer.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-2 
+                                                                                                                               SDLC AND STAGES
+
+SDLC (software development lifecycle)
+-> It is process of design, develop, test software
+-> end goal is to delivered high quality software or application
+->suppose we working at flipkart.com an e-commerce website where we delivered e-commerce application or let assume we are building and developing e-commerce application like flipkart.com so in flipkart.com application there have different phase before delivering application to customer .
+->now this ecommerce application want to update or support or provide new feature to customer (like they have no men clothing section) so company has research and founded that flipkart.com application will  get more benefit by selling men clothing so company have
+decided to launch or introduce new feature or section  for  men clothing category. 
+
+
+phases like
+1- planning - need to gather the requirement or information for changing in products from your senior member or by taking input from customer feedback 
+2- defining  - you define the requirement in term of document or code which you plan in planning stage
+3- designing - now you need to design where suppose your application kid section getting more load during Diwali festival then you can design the scalable application so it can scalable when demand increase
+
+devops engineer main work start from here 
+4- building - developer will developing the application based on design or requirement you have decided . developer will write code  for developing  application and once he write code for developing application and push this code to common location in organisation like Git(source code repositories) for storing all code of application. we use source code repositories because there is no only one developer who developer code multiple developer or team developing application so they push or store that code on central source code repositories. so all member or developer can access or share the code. so that why use GIT and once developer wrote the code and review the code then push code to git. now it move to next phase testing phase
+5- testing - now in this stage developer has tested the application on his server(his local machine) which working properly. but you need to delivered the application globally so that's why its goes for testing stage where in testing stage application which stored in git repositories is been taken and deploy on testing server for testing 
+6- deploy -   in this stage application has promote into production environment or server so that customer can access application
+
+* so this process can be happen without manual process by following automated process and delivered application quickly to customer.
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-3 
+                                                                                                                                 VIRTULIZATION and  OS 
+
+server is used for deploying application from your local machine to server so that user can access the application publicly.
+
+# Why need virtual machine
+-> virtual machine is used to test software or application on different different OS before publishing software (like software developer develop software  and they want it can run on that os which Linux and window based OS means that user can access which having Linux and window based system)
+-> definition -> virtual machines (VMs) are software-based emulations of physical computers that allow multiple operating systems to run on a single computer.
+-> Virtual machines offer advantages, including resource utilization, flexibility, security, and portability
+
+ Work of Virtual Machine? 
+-> To make Virtual Machine hypervisor Software is to be used where it distribute your 
+physical system hardware resource so so that each vm will get resources like memory, storage and CPU,OS and Network interface .
+- ex- you can run Linux OS on your window os by using VMware software. 
+
+ Use of Virtual Machine? 
+-> Run diff diff OS in single system
+-> using Virtual machine you can test your software in diff diff OS
+ > using virtual machine provide security by testing your software on Virtual machine so that if there is any error or bug then it cant affect to your physical system 
+->t also used in Programme development - where developer use VM for creating isolated environment for coding and testing application
+
+benefit of VM
+-> testing software or application on different OS
+-> you can run different os in single computer with help of virtualization 
+-> there is no risk issue with main physical machine  means suppose during  testing application on diff os if there is bug or error issue found in application then it cannot affect to your physical machine 
+-> faster disaster recovery where if vm crash it can be restored quickly without affecting your physical machine 
+
+Disadvantages: -
+1-- highly cost able compared to physical machine 
+2- vm performance depend on host machine- The virtual computer runs virtually, but still, it has a dependency on the host machine, and if host machine is provided high performance, then only vm performance will be high.
+3- Complex Structure
+The structure of virtual machines is complex as they are connected with multiple local area networks or LANs. Hence, if any fault happens, it will be challenging to find out where the fault occurred. Thus, the organization needs to hire an IT employee who can solve such faults and keep running machine properly.
+
+virtualization 
+-> virtualization can be used for learning and education purpose
+-> In virtualization it will use your physical hardware as virtual hardware means it create layer(that layer we called hypervisor) of your physical hardware and through it you can run multiple  different os of  your requirement
+-> definition - - virtualisation is technology which converting physical hardware resources into virtual 
+hardware resources where using single physical hardware you can create multiple virtual 
+machine in it. So using virtualisation you can use hardware more effectively and reduce the 
+cost and provide flexibility. 
+
+Uses of virtualization
+- using virtualization you can  testing  software
+ - training and education purpose 
+- to run diff diff os in single hardware
+- run many server  in single hardware
+-  it also use to which helps in data recovery by creating a virtual copy of your hardware that can be accessed after a disaster. Virtualization reduces downtime, helps to recover data from the hardware.
+
+advantage and disadvantage virtualization	
+advantage
+-> cost effective because you can run many machine or server in single hardware 
+-> high availability - if vm crash you can continue work in another vm
+-> it also helps in data recovery by creating a virtual copy of your hardware that can be accessed after a disaster. Virtualization reduces downtime, helps to recover data from the hardware.
+
+disadvantage 
+-> complex to manage VM 
+-> security risk - if host machine is hacked then all VM will be unsafe
+-> high initial cost where virtualization reduce the cost in long run but in initial setup cost of storage and sever is high 
+
+hypervisor
+-> hypervisor is software(like VMware, virtual box) that create and run virtual machines (means in your physical machine you install hypervisor software and then with help of it you can run multiple virtual machine and you can setup diff os for diff virtual machine
+-> definition - It is software layer which allow to run Many virtual machine on single computer and allow 
+each Vm to run his own OS
+
+how hypervisor work?
+-> it will use physical hardware resources of your  machine like CPU, ram, storage(HDD) as virtual hardware resources and create virtual machine and run different os in it.
+
+Types of Hypervisor?
+Type-1 :- called Bared metal hypervisor this hypervisor is already install on physical hardware so VM is directly installed on your physical 
+hardware ,no need of any host OS and it connect your physical system hardware and VM directly. 
+Ex- Microsoft Hyper V, EXsi, cloud service provider.
+-> Type-2 :- called hosted hypervisor and where VM is need to  installed  on physical machine 
+to run VM and here you need to choose OS . 
+Ex- virtual box and VMware
+
+
+What is Operating System?
+ ->  it is software  that manage hardware and software resources and enable interaction 
+between user and computer and performing function like memory management and process 
+management, file management.
+
+what is Linux OS? 
+->  Linux is Open source and free Operating System. where anyone can use and  it will allow 
+user to modify and add source code (configuration file) and it is secure os and it will used  in 
+computer, server and other devices.
+
+Use of Linux OS? 
+-> web server (Apache, nginx) 
+-> cloud platform
+ -> mobile ( android os Linux) 
+-> cyber security to provide security to application. 
+
+Advantage of Linux OS?
+ -> it is free and open source OS 
+-> you can modify source code -> multiuser work simultaneously 
+-> multitasking(where you can run many process at time) and provide security . 
+
+difference between Linux OS and Window OS? 
+-> Linux Os 
+* it is open source Os 
+* free OS 
+* it is secure 
+* it is customisable where you can add feature 
+* there will be less virus and malware 
+  file system is hierarchical manner starting from root directory and use forward slashes to 
+separate directory 
+* Linux is case sensitive (considered as diff file) 
+
+-> Window Os 
+* it closed source OS 
+* it is not free OS , cost OS 
+* window OS is less secure 
+* there will more virus and malware 
+* file system Is organised in form of disk drive and use backslash to separate directory. 
+* it Is not case sensitive l(if you create a.txt file in capital letter and you create another file of 
+same name in small letter then both the file are considered to be same file)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-4
+                                                                                                               HOW TO CREATE VM IN AWS 
+
+example
+suppose customer or user request for  aws service from his machine then aws will provide Service to user 
+like user request for aws ec2 service from his machine through AWS console  then aws will provide ec2 service to user 
+ 
+suppose but every time customer request for 100 Ec2 instance everyday then you can create ec2 instance manually which take more time so devops is introduced where devops provide automation and aws support automation in aws which we called aws API so  devops engineer or user using his laptop or device create automation script where he call AWS API and based on define instance in script script will run and  create ec2 instance instead of using AWS console where you launch instance manually which is difficult task
+
+or suppose you create script to automate process for creating one ec2 instance in define time  when customer request for instance  then this  can be  done through automation. and here in automation there is no manual intervention so when there is no manual intervention that means there are no error.
+so if you do  Manual process suppose you getting request for creation of 100 instance per day then you want to login in AWS console 100 times and need to create instance which will take long time and decrease efficiency  
+
+-> developer in AWS will write API for Service and when API receive request then you will get AWS service 
+-> AWS API is responsible for receiving request and once it receive the request and for resource request is valid(means all standard for service is expecting) and authorised ( means user who request for service should have full access to aws) and authorized( have full access) so when all this 3 criteria matched means when user sending request for service then the request should be valid and authorised and authenticated and once it match this criteria devops engineer will write script where yours script will make API call with AWS
+-> you can use AWS CLI to automate creation of instance 
+-> Using BOTO3 in python you can request AWS API or call AWS API with any AWS service 
+-> terraform can automate process for multiple cloud 
+-> using AWS CLI or AWS API or terraform you can directly talk with AWS API and API is written by AWS developer at AWS and where it exposing service using API and while devops engineer automate process by using AWS CLI or AWS API or terraform
+
+INTERVIEW 
+1- how do you create 10 VM at once or what automation using in your organisation infrastructure (infra means like creation of instance or need storage or want required database)
+-> using terraform or AWS cli or AWS API or hybrid cloud platform use for automation in organisation
+
+hybrid cloud platform
+-> hybrid cloud platform mean one vm or resources is in one cloud platform and another vm or resources or  infrastructure is in another cloud platform which increase efficiency and automate infrastructure in diff cloud platform
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-5
+                                                                                                                                AWS CLI 
+                 
+example:-
+like suppose you are devops engineer and you need to login into 100 VM everyday so it to be difficult that you  need to go to aws console and connect each vm which is difficult because aws will disconnect session if vm is not in use. so we use Terminal here.
+
+but permission denied because you need to give key value pair
+-> AWS CLI can directly talk with aws API and create  resources using any services on AWS and all this resources can be created using automation 
+
+
+1- Install AWS CLI
+- https://awscli.amazonaws.com/AWSCLIV2.msi 
+
+2- to verify AWS CLI  install on your machine 
+- AWS version
+
+3- but now you dont have account information so i need to authenticate aws 
+- go to aws console
+- go to user name drop down
+- click on security credential
+- store that secret key 
+- go to cli
+- C:\Users\ASUS\Downloads> aws configure
+AWS Access Key ID [****************VRU2]:
+PS C:\Users\ASUS\Downloads> aws configure
+AWS Access Key ID [****************VRU2]: AKIASPDG
+AWS Secret Access Key [****************sBjr]: xP1jMQwWzuIageO823WedMUMhEH
+Default region name [ap-south-1]: default
+Default output format [json]: default
+
+4- now whatever command i type in cli will be reflect on aws like i want to display s3 bucket which i create
+PS C:\Users\ASUS\Downloads> aws s3 ls
+2025-05-17 22:04:21 idcard-2025
+2025-06-16 14:48:23 kakshil-bucket
+
+
+5- To launch instance using CLI 
+but before need to create vpc, subnet, internet gateway, route table and sec group and key pair all command get ONLINE
+command ->  aws ec2 run-instances --image-id ami-xxxxxxx --count 1 -instance-type t2.micro -key-name MyKeyPair --security-group-ids sg-903004f8 --subnet-id subnet-6e7f829e
+
+2nd METHOD
+-------------------
+AWS CloudFormation Template you can create resources on AWS 
+
+3rd METHOD
+----------------
+using AWS API  you need to write Shell script or programming language (in python BOTO3) to automate process
+
+remember :-
+Using AWS CLI you can run command to create and manage aws service or resources and using AWS CLI you can also create script for automate repetitive task and manage multiple service efficiency and integrate with devops workflow
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-6
+                                                                                                                                      LINUX  & SHELL SCRIPTING THEORY
+
+what is OS?
+-> basically it is software which manage hardware and software resources and provide interface between user and computer hardware allow user or software can communicate with hardware and use hardware resources like cpu, ram, storage and I/O ports or devices(through I/O ports(like HDMI, USB) or I/O devices(monitor, keyboard, mouse, printer, speaker) can allow to communicated with external devices  etc.
+-> when user accessing software then user request go from software to your os and then hardware and vice versa
+
+what is kernel
+-> kernel is basically called OS which will  allow communication between hardware and software 
+-> kernel help to send request software to hardware and hardware to software.
+-> kernel managed device management, memory management, process management 
+
+what is system libraries?
+-> system libraries are found in every OS which will perform the task like means user is performing task then it come from system libraries and then go to kernel
+
+what is shell?
+ -> it is command line interface which  allow to interact with OS . where when user type command then shell will translate command in executable format so that kernel(os) can understand and executed that command.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
