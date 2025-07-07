@@ -1,0 +1,32 @@
+                                                                                                                           SHELL SCRIPTING
+
+-> automation is process to reduced the manual activity 
+-> Shell scripting is process of automating day to day activity
+-> we use automation when in organsiation you want to run same process everyday or activitiy becuase manually it will be lot of effort and consume time.
+-> so if you doing this kind of automation in linux machine then you need shell scripting 
+example:-
+suppose in organsation  you have given task to create 1000 files and it keep on increasing  then we used automation in linux by using shell scripting
+WHAT IS LINUX SHELL?
+-> linux shell is Command line interface which will allow user to run command or application and it will 
+intreact with linux Kernel(Os)
+
+WHAT IS KERNEL?
+-> it is OS of linux which will acts as intermida
+
+###################################################
+# This Script will provide Machine health Statustary between hardware and shell or application which allow commmunication between hardware and softwarer(application) and manage resources
+
+DIFFERENT TYPE OF LINUX SHELL?
+1- bash
+2- sh
+3-ksh
+4- zsh
+
+TO CHECK MY SHELL TYPE?
+-> echo $0
+
+WHAT IS SHELL SCRIPTING 
+-> shell scripting is set of command which will be execute sequentially order and perform task like automation and user intereaction etc 
+
+what is Shebang Line?
+-> The work of shebang line is to Tell OS to execute this script.
