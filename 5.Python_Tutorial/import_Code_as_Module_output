@@ -1,0 +1,4 @@
+#how to use 20 number python file in this file
+
+import pythonCode_as_Module
+result=pythonCode_as_Module.even_or_odd( 3 ) #result use command
